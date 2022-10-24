@@ -14,7 +14,7 @@ WHERE `cfu` > '10';
 
 SELECT * 
 FROM `students` 
-WHERE `date_of_birth` >= '1992-20-10';
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) >= 30;
 
 //Query 4: Selezionare tutti i corsi del primo semestre del primo anno di qualsiasi corso di laurea
 
